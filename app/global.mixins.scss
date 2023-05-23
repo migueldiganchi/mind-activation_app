@@ -1,0 +1,11 @@
+// When the Inputs are 4 Variables
+@mixin border-radius-dots($tl, $tr, $br, $bl) {
+  border-top-left-radius: $tl !important;
+  border-top-right-radius: $tr !important;
+  border-bottom-right-radius: $br !important;
+  border-bottom-left-radius: $bl !important;
+}
+
+@mixin border-radius($pixel) {
+  border-radius: $pixel !important;
+}

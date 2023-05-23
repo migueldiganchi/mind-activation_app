@@ -1,0 +1,88 @@
+@import "global.mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 36px 0 0 0;
+  background-color: #1c1d3b !important;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 33.3px auto 36px;
+}
+
+.subtitle {
+  @include border-radius(27px);
+  margin: 12.3px auto 33.3px !important;
+  background: #d8e054;
+  display: inline-block;
+  padding: 9px 15px;
+  color: #000000;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+  padding: 27px 0;
+}
+
+.initial-loading {
+  padding: 90px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-dark {
+  color: #233a59 !important;
+}
+
+.text-light {
+  color: #ffffff !important;
+}
+
+.d-block {
+  display: block;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: none;
+  opacity: 0.6;
+}
+
+.btn {
+  @include border-radius(4.5px);
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  padding: 12px 72px;
+  border-width: 0px 0px 4px 4px;
+  border-style: solid;
+  font-weight: bold;
+  box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.2);
+  color: #000;
+}

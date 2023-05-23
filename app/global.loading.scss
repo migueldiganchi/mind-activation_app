@@ -1,0 +1,54 @@
+@import "global.mixins.scss";
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0;
+}
+
+.loading {
+  @include border-radius(50%);
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  animation: spin 1s ease-in-out infinite;
+
+  &::before {
+    @include border-radius(50%);
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 8px solid transparent;
+    border-top: 8px solid #e74c3c;
+    animation: spin 1.2s linear infinite;
+  }
+
+  &::after {
+    @include border-radius(50%);
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 8px solid transparent;
+    border-top: 8px solid #f9c922;
+    animation: spin 0.9s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

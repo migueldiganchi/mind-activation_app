@@ -1,0 +1,24 @@
+// Variables para el sistema de grilla
+$grid-gutter: 16px;
+$grid-columns: 12;
+
+// Clase para la fila (equivalente a v-row)
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -($grid-gutter / 2);
+}
+
+// Clase para las columnas (equivalente a v-col)
+.col {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding: ($grid-gutter / 2);
+  width: 100%;
+
+  @for $i from 1 through $grid-columns {
+    &.col-#{$i} {
+      width: (100% / $grid-columns * $i);
+    }
+  }
+}
