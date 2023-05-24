@@ -21,4 +21,32 @@ $grid-columns: 12;
       width: (100% / $grid-columns * $i);
     }
   }
+
+  // Agregar declaración @for para definir $i dentro de la media query
+  @for $i from 1 through $grid-columns {
+    @media (min-width: 768px) {
+      // Estilos para pantallas más grandes (por ejemplo, tabletas)
+      &.col-sm-#{$i} {
+        width: (100% / $grid-columns * $i);
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    // Estilos para pantallas aún más grandes (por ejemplo, computadoras de escritorio)
+    @for $i from 1 through $grid-columns {
+      &.col-md-#{$i} {
+        width: (100% / $grid-columns * $i);
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    // Estilos para pantallas muy grandes (por ejemplo, pantallas grandes de escritorio)
+    @for $i from 1 through $grid-columns {
+      &.col-lg-#{$i} {
+        width: (100% / $grid-columns * $i);
+      }
+    }
+  }
 }

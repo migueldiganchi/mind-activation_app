@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Game from "../components/Games/Game";
+import GameBoard from "../components/Game/GameBoard";
 import Page from "../components/Page";
+import Link from "next/link";
 
 const GamePage = () => {
   const [isGaming, setIsGaming] = useState(false);
@@ -12,7 +13,7 @@ const GamePage = () => {
   return (
     <Page>
       {/* Game */}
-      <Game isGaming={isGaming} />
+      <GameBoard isGaming={isGaming} />
     </Page>
   );
 };

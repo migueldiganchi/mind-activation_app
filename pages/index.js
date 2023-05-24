@@ -1,12 +1,12 @@
 import Link from "next/link";
-import Game from "../components/Games/Game";
+import GameBoard from "../components/Game/GameBoard";
 import Page from "../components/Page";
 
 const HomePage = () => {
   return (
     <Page>
       {/* Game Board Presentation */}
-      <Game />
+      <GameBoard />
 
       {/* Start Game Button */}
       <div className="play-button_box text-center">

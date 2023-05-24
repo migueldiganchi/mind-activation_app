@@ -13,7 +13,7 @@ const CardGrid = ({
   return (
     <div className="game-board row">
       {cards.map((card, cardIndex) => (
-        <div key={cardIndex} className="col col-3 game-board_item">
+        <div key={cardIndex} className="col col-12 col-sm-6 col-lg-3 game-board_item">
           <Card
             key={cardIndex}
             character={card}

@@ -4,11 +4,11 @@ import { getCharacters } from "../../api/io";
 import GameStatus from "./GameStatus";
 import GameInfo from "./GameInfo";
 import GameOverBox from "./GameOverBox";
-
-import CardGrid from "../Cards/CardGrid";
 import GameLoader from "./GameLoader";
 
-const Game = ({ isGaming, onFinishedGame }) => {
+import CardGrid from "./Cards/CardGrid";
+
+const GameBoard = ({ isGaming }) => {
   const CHARACTERS_COUNTER = 6;
 
   const [cards, setCards] = useState([]);
@@ -81,7 +81,6 @@ const Game = ({ isGaming, onFinishedGame }) => {
         if (matchedCards.length + 1 === CHARACTERS_COUNTER) {
           setTimeout(() => {
             setIsGameOver(true);
-            onFinishedGame();
           }, 999);
         }
       } else {
@@ -215,4 +214,4 @@ const Game = ({ isGaming, onFinishedGame }) => {
   );
 };
 
-export default Game;
+export default GameBoard;

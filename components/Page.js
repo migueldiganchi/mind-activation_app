@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Page = ({ title, children }) => {
@@ -9,8 +10,8 @@ const Page = ({ title, children }) => {
       <img src={logoUrl} alt={title} width="280px" />
 
       {/* Subtitle */}
-      <div>
-        <h4 className="subtitle">Juego de memoria</h4>
+      <div className="subtitle_box">
+        <h4 className="subtitle text-dark">Juego de memoria</h4>
       </div>
 
       {/* Injected Content */}
