@@ -9,7 +9,7 @@
 .page-title {
   @include border-radius(27px);
   margin: 12.3px auto 33.3px !important;
-  background: #d8e054;
+  background: $lemon;
   display: inline-block;
   padding: 9px 15px;
 }
