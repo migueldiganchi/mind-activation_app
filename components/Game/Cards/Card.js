@@ -21,7 +21,7 @@ const Card = ({ character, isFlipped, isDisabled, onCardClick }) => {
       onClick={handleClick}
     >
       {isFlipped ? (
-        <div className="card-front text-left">
+        <div className="card-front">
           <img
             className="card-image"
             src={character.image}

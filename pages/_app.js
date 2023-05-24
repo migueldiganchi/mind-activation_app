@@ -1,5 +1,6 @@
 import "../app/global.scss";
-import "../app/global.mixins.scss";
+import "../app/global.config.scss";
+import "../app/global.page.scss";
 import "../app/global.grid.scss";
 import "../app/global.loading.scss";
 import "../app/global.game.scss";

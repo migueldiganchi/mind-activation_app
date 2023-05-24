@@ -1,0 +1,15 @@
+@import "global.config.scss";
+
+.page {
+  margin: auto;
+  max-width: 900px;
+  padding: 27px 0;
+}
+
+.page-title {
+  @include border-radius(27px);
+  margin: 12.3px auto 33.3px !important;
+  background: #d8e054;
+  display: inline-block;
+  padding: 9px 15px;
+}

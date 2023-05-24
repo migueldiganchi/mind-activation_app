@@ -158,7 +158,7 @@ const GameBoard = ({ isGaming }) => {
   }, [isGaming]);
 
   return isLoading ? (
-    <div className="initial-loading disabled text-light">
+    <div className="game-loader-box disabled text-light">
       Cargando el juego, por favor espera un momento...
     </div>
   ) : (

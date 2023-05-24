@@ -1,4 +1,4 @@
-@import "global.mixins.scss";
+@import "global.config.scss";
 
 $grid-gutter: 16px;
 $grid-columns: 12;
@@ -9,65 +9,69 @@ $grid-columns: 12;
   margin-top: 30px;
   margin-bottom: 45px;
   padding: 15.3px;
-  background-color: #fffac2;
+  background-color: $light-lemon;
+
+  &-loader-box {
+    padding: 90px 0;
+  }
 
   &.error {
-    background-color: #ff3636 !important;
+    background-color: $red !important;
     .game-status {
-      border-left: solid 3px #fff !important;
-      border-right: solid 3px #fff !important;
-      border-bottom: solid 3px #fff !important;
-      background-color: #ff3636 !important;
+      border-left: solid 3px $white !important;
+      border-right: solid 3px $white !important;
+      border-bottom: solid 3px $white !important;
+      background-color: $red !important;
     }
   }
 
   &.success {
-    background-color: #2da02d !important;
+    background-color: $green !important;
     .game-status {
-      border-left: solid 3px #fff !important;
-      border-right: solid 3px #fff !important;
-      border-bottom: solid 3px #fff !important;
-      background-color: #2da02d !important;
+      border-left: solid 3px $white !important;
+      border-right: solid 3px $white !important;
+      border-bottom: solid 3px $white !important;
+      background-color: $green !important;
     }
   }
 
   &.error,
   &.success {
     .game-status {
-      color: #fff !important;
+      color: $white !important;
     }
 
     .game-info {
       transition: color 0.3s ease;
-      color: #fff !important;
+      color: $white !important;
     }
   }
 
   &-status {
     @include border-radius-dots(0, 0, 19.9px, 19.9px);
-    border-left: solid 4.5px #d8e054;
-    border-right: solid 4.5px #d8e054;
-    border-bottom: solid 4.5px #d8e054;
+    border-left: solid 4.5px $lemon;
+    border-right: solid 4.5px $lemon;
+    border-bottom: solid 4.5px $lemon;
     transition: color 0.12s ease;
-    color: #1c1d3b;
+    color: $dark-blue;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: $white;
     padding: 12.6px 15px;
     z-index: 999;
     font-weight: bold;
-    box-shadow: 0px 4px 6px -2px #d8e05490;
+    box-shadow: 0px 4px 6px -2px $tr-lemon;
     p {
       font-size: 13.6px;
     }
   }
 
   &-info {
-    color: #333;
+    color: $dark-blue;
     display: flex;
-    padding: 18px;
+    padding: 18px 28px 0;
     font-size: 18px;
 
     &_hits {
@@ -81,21 +85,21 @@ $grid-columns: 12;
     &_item {
       .card {
         @include border-radius(4.5px);
-        color: #000;
+        color: $black;
         position: relative;
         height: 192px;
         transform-style: preserve-3d;
         transition: all 0.3s;
-        background: #ffffff;
-        border: solid 12.6px #fff;
+        background: $white;
+        border: solid 12.6px $white;
         margin: 9px;
         padding-bottom: 12.6px;
-        box-shadow: 0px 4px 6px -2px #00000033;
+        box-shadow: 0px 4px 6px -2px $tr-black;
         transform: rotateY(180deg);
 
         &:not(.flipped) {
           cursor: pointer;
-          background-color: #a2f2f9;
+          background-color: $light-blue;
         }
 
         &-name {
@@ -112,7 +116,7 @@ $grid-columns: 12;
 
         &:hover,
         &.flipped {
-          box-shadow: 0px 1px 2px -1px #00000033;
+          box-shadow: 0px 1px 2px -1px $tr-black;
         }
 
         &-front,
@@ -121,6 +125,7 @@ $grid-columns: 12;
           height: 100%;
           position: absolute;
           backface-visibility: hidden;
+          text-align: left;
         }
 
         &-front {
@@ -154,7 +159,7 @@ $grid-columns: 12;
         font-size: 48px;
         line-height: 59px;
         margin-bottom: 9px;
-        color: #233a59;
+        color: $blue;
       }
 
       &_info {
@@ -162,7 +167,7 @@ $grid-columns: 12;
         font-size: 24px;
         line-height: 29px;
         margin-bottom: 27.9px;
-        color: #000;
+        color: $black;
       }
 
       &_actions {
@@ -196,20 +201,20 @@ $grid-columns: 12;
 }
 
 .play-button {
-  background: #a2f2f9;
-  border-color: #d8e054;
+  background: $light-blue;
+  border-color: $lemon;
 
   &_box {
     margin: 18px auto;
   }
 
   &:hover {
-    background-color: #18dbed;
+    background-color: $cyan;
   }
 }
 
 .home-button {
-  background: #d8e054;
-  border-color: #a2f2f9;
+  background: $lemon;
+  border-color: $light-blue;
   margin-left: 27px;
 }

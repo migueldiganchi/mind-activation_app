@@ -1,4 +1,4 @@
-@import "global.mixins.scss";
+@import "global.config.scss";
 
 .loading-container {
   display: flex;
@@ -13,8 +13,8 @@
   width: 80px;
   height: 80px;
   position: relative;
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #3498db;
+  border: 8px solid $blue;
+  border-top: 8px solid $blue;
   animation: spin 1s ease-in-out infinite;
 
   &::before {
@@ -26,7 +26,7 @@
     right: 3px;
     bottom: 3px;
     border: 8px solid transparent;
-    border-top: 8px solid #e74c3c;
+    border-top: 8px solid $cyan;
     animation: spin 1.2s linear infinite;
   }
 
@@ -39,7 +39,7 @@
     right: 15px;
     bottom: 15px;
     border: 8px solid transparent;
-    border-top: 8px solid #f9c922;
+    border-top: 8px solid $dark-lemon;
     animation: spin 0.9s linear infinite;
   }
 }

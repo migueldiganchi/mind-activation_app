@@ -1,3 +1,19 @@
+// Colors
+$lemon: #d8e054;
+$light-lemon: #f3f6b6;
+$dark-lemon: #b2bb16;
+$tr-lemon: #d8e05490;
+$light-yellow: #fffac2;
+$blue: #233a59;
+$light-blue: #a2f2f9;
+$dark-blue: #24193A;
+$cyan: #18dbed;
+$red: #ff3636;
+$green: #2da02d;
+$white: #fff;
+$black: #000;
+$tr-black: #00000033;
+
 // When the Inputs are 4 Variables
 @mixin border-radius-dots($tl, $tr, $br, $bl) {
   border-top-left-radius: $tl !important;
