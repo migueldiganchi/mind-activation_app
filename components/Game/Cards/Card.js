@@ -27,7 +27,7 @@ const Card = ({ character, isFlipped, isDisabled, onCardClick }) => {
             src={character.image}
             alt={character.name}
           />
-          <b className="card-name d-block text-dark">
+          <b className="card-name text-dark">
             {truncate(character.name, MAX_NAME_LENGTH)}
           </b>
           <small className="card-description">
